@@ -12,7 +12,6 @@ import {
   CustomButton,
   ProfileImage,
   PopupContentContainer,
-  PopupInstruction,
   PopupButtonContainer,
 } from './styledComponents'
 
@@ -33,42 +32,42 @@ const Header = props => {
           : 'https://assets.ccbp.in/frontend/react-js/nxt-watch-logo-light-theme-img.png'
 
         const themeIcon = isDarkTheme ? (
-          <FaSun size={20} color='#ffffff' />
+          <FaSun size={20} color="#ffffff" />
         ) : (
           <FaMoon size={20} />
         )
 
         return (
           <>
-            <Link to='/'>
-              <WebSiteLogo src={logoUrl} alt='website logo' />
+            <Link to="/">
+              <WebSiteLogo src={logoUrl} alt="website logo" />
             </Link>
 
             <HeaderMenu>
               <CustomButton
-                type='button'
+                type="button"
                 onClick={toggleTheme}
-                data-testid='theme'
+                data-testid="theme"
               >
                 {themeIcon}
               </CustomButton>
 
               <ProfileImage
-                src='https://assets.ccbp.in/frontend/react-js/nxt-watch-profile-img.png'
-                alt='profile'
+                src="https://assets.ccbp.in/frontend/react-js/nxt-watch-profile-img.png"
+                alt="profile"
               />
 
-              <Popup modal trigger={<button type='button'>Logout</button>}>
+              <Popup modal trigger={<button type="button">Logout</button>}>
                 {close => (
                   <PopupContentContainer>
                     <p>Are you sure, you want to logout</p>
 
                     <PopupButtonContainer>
-                      <button type='button' onClick={close}>
+                      <button type="button" onClick={close}>
                         Cancel
                       </button>
 
-                      <button type='button' onClick={onClickLogout}>
+                      <button type="button" onClick={onClickLogout}>
                         Confirm
                       </button>
                     </PopupButtonContainer>
