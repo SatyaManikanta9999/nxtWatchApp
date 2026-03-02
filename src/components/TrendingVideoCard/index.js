@@ -46,7 +46,6 @@ const TrendingVideoCard = props => {
 
                   {/* MUST be plain <p> */}
                   <p>{publishedAt}</p>
-
                 </ProfileDetailsContainer>
               </Link>
             </ProfileSection>

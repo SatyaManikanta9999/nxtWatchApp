@@ -1,4 +1,3 @@
-
 import {Component} from 'react'
 import {AiFillFire} from 'react-icons/ai'
 import Loader from 'react-loader-spinner'

@@ -46,7 +46,6 @@ const HomeVideoCard = props => {
 
                   {/* MUST be plain <p> */}
                   <p>{publishedAt}</p>
-
                 </ProfileDetailsContainer>
               </ProfileSection>
             </Link>
